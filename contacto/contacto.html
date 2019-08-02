@@ -57,65 +57,62 @@
                   <h1 class="text-center">Contactanos </h1>
                   <!-- We're going to place the form here in the next step -->
                   <form action="
-        " method="get" class="justify-content-center">
-        <article class="row">
+        " method="get" class="needs-validation" novalidate>
+        <article class="form-row">
             <article class="col-md-6">
-                <article class="form-group">
-                    <label for="form_name">Nombre</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                    <article class="help-block with-errors"></article>
-                </article>
+               
+                    <label for="validacion1">Nombre</label>
+                    <input id="form_name" type="text" name="name" class="form-control" id="validacion1" placeholder="Por favor ingresa tu nombre *" required="required" data-error="Firstname is required.">
+                    <article class="valid-feedback">
+                      Perfecto!
+                    </article>
+                
             </article>
             <article class="col-md-6">
                 <article class="form-group">
-                    <label for="form_lastname">Apellidos *</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                    <article class="help-block with-errors"></article>
+                    <label for="validacion2">Apellidos *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" id="validacion2" placeholder="Por favor ingresa tus appellidos*" required="required" data-error="Lastname is required.">
+                    <article class="valid-feedback">Perfecto!</article>
                 </article>
             </article>
         </article>
             
             <!---->
-            <article class="row">
+            <article class="form-row">
                 <article class="col-md-6">
-                    <article class="form-group">
-                        <label for="form_email">Correo *</label>
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                        <article class="help-block with-errors"></article>
-                    </article>
+                    
+                        <label for="validacionEmail">Correo *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" id="validacionEmail" placeholder="Por favor ingresa tu email *" required="required" data-error="Valid email is required.">
+                        <small class="form-text text-muted">exmple@gmail.com</small>
+                        <article class="valid-feedback">Perfecto</article>
+                    
                 </article>
                 <article class="col-md-6">
-                    <article class="form-group">
-                        <label for="form_need">Please specify your need *</label>
-                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                   
+                        <label for="validarOpciones">Por Favor selecciona una categoria*</label>
+                        <select id="validarOpciones" name="need" class="form-control custom-select" required="required" data-error="Selecciona una opcion.">
                             <option value=""></option>
-                            <option value="Request quotation">Request quotation</option>
-                            <option value="Request order status">Request order status</option>
-                            <option value="Request copy of an invoice">Request copy of an invoice</option>
-                            <option value="Other">Other</option>
+                            <option value="Request quotation">Habitaciones</option>
+                            <option value="Request order status">Precios</option>
+                            <option value="Request copy of an invoice">Reservaciones</option>
+                            <option value="Other">Otros</option>
                         </select>
-                        <article class="help-block with-errors"></article>
-                    </article>
+                        <article class="valid-feedback">Perfecto!</article>
+                    
                 </article>
             </article>
             <!---->
-            <article class="row">
+            <article class="form-row">
                 <article class="col-md-12">
-                    <article class="form-group">
-                        <label for="form_message">Mensage *</label>
-                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                        <article class="help-block with-errors"></article>
-                    </article>
+                   
+                        <label for="validarMensaje">Mensaje *</label>
+                        <textarea  name="message" class="form-control" id="validarMensaje" placeholder="Observaciones *" rows="4" required="required" minlength="4" maxlength="255"></textarea>
+                        <article class="valid-feedback">Perfecto!</article>
+                   
                 </article>
                 <article class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Send message">
-                </article>
-            </article>
-            <article class="row">
-                <article class="col-md-12">
-                    <p class="text-muted">
-                        <strong>*</strong> These fields are required. Contact form template by
-                        <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+                    <br>
+                    <button class="btn btn-success btn-send" type="submit">Enviar</button>
                 </article>
             </article>
         </article>
@@ -140,5 +137,26 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../jquery/jquery.min.js"></script>
   <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--script para validar-->
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 </body>
 </html>
