@@ -12,6 +12,9 @@
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="fancy/jquery-3.3.1.min.js"></script>
+ <script src="fancy/jquery.fancybox.min.js"></script>
+  <link href="fancy/jquery.fancybox.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/small-business.css" rel="stylesheet">
@@ -24,7 +27,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar  fixed-top navbar-light" style="background-color: #168396;" >
+  <nav class="navbar navbar-expand-lg navbar  fixed-top navbar-light " style="background-color: #168396; " >
     <section class="container">
       <a class="navbar-brand" href="#"><img  width="60" height="50" src="images/comf.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,25 +36,37 @@
       <section class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio
+            <a class="nav-link text-white" href="index.html">Inicio
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+
+           <li class="nav-item">
+            <a class="nav-link text-white" href="Galeria.html">Galeria</a>
           </li>
+          
           <li class="nav-item">
-            <a class="nav-link" href="#">Habitaciones</a>
+            <a class="nav-link text-white" href="#">Habitaciones</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Galeria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Reservar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="#">Reservar</a>
+  </li>
+
+   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nosotros</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Politicas</a>
+    
+    </div>
+  </li>
+       
+              <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Consultas</a>
+    
+    </div>
+  </li>
         </ul>
       
       </section>
@@ -63,9 +78,35 @@
 
     <!-- Heading Row -->
     <articule class="row align-items-center my-5">
-      <articule class="col-lg-7">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="">
-       
+      <articule class=" col-12 col-lg-7">
+        <!--<img class="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="">-->
+        <article id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <article class="carousel-inner">
+            <article class="carousel-item active">
+              <img src="images/a2.jpg" class="d-block w-100" alt="...">
+            </article>
+            <article class="carousel-item">
+              <img src="images/a3.jpg" class="d-block w-100" alt="...">
+            </article>
+            <article class="carousel-item">
+              <img src="images/a4.jpg" class="d-block w-100" alt="...">
+            </article>
+            <article class="carousel-item">
+              <img src="images/a5.jpg" class="d-block w-100" alt="...">
+            </article>
+            <article class="carousel-item">
+              <img src="images/a6.jpg" class="d-block w-100" alt="...">
+            </article>
+          </article>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </article>
       </articule>
       <!-- /.col-lg-8 -->
       <articule class="col-lg-5">
@@ -85,48 +126,29 @@
     </section>
 
     <!-- Content Row -->
-    <section class="row">
-      <section class="col-md-4 mb-5">
-        <articule class="card h-100">
-          <articule class="card-body">
-            <h2 class="card-title">Card One</h2>
-            <img src="images/p1.jpg">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-          </articule>
-          <articule class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </articule>
-        </articule>
-      </section>
-      <!-- /.col-md-4 -->
-      <section class="col-md-4 mb-5">
-        <section class="card h-100">
-          <articule class="card-body">
-            <h2 class="card-title">Card Two</h2>
-            <img src="images/p2.jpg">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-          </articule>
-          <articule class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </articule>
-        </section>
-      </section>
-      <!-- /.col-md-4 -->
-      <section class="col-md-4 mb-5">
-        <section class="card h-100">
-          <articule class="card-body">
-            <h2 class="card-title">Card Three</h2>
-            <img src="images/p3.jpg">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-          </articule>
-          <articule class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </articule>
-        </section>
-      </section>
-      <!-- /.col-md-4 -->
+   <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+           <div class="row">
+     <div class="col-sm-3 p-3 px-2 "> <a data-fancybox="gallery" href="images/ga4.jpg"> <img height="200"  width="200"  src="images/ga4.jpg"></a></div>
+    <div class="col-sm-3 p-3 px-2 "> <a data-fancybox="gallery" href="images/ga4.jpg"> <img height="200"  width="200"  src="images/ga4.jpg"></a></div>
+     <div class="col-sm-3 p-3 px-2  "> <a data-fancybox="gallery" href="images/ga4.jpg"> <img height="200"  width="200"  src="images/ga4.jpg"></a></div>
 
-    </section>
+  </div>
+      <div class="row">
+
+     <div class="col-sm-3 p-3 px-2 "> <a data-fancybox="gallery" href="images/ga4.jpg"> <img height="200"  width="200"  src="images/ga4.jpg"></a></div>
+    <div class="col-sm-3 p-3 px-2 "> <a data-fancybox="gallery" href="images/ga4.jpg"> <img height="200"  width="200"  src="images/ga4.jpg"></a></div>
+     <div class="col-sm-3 p-3 px-2  "> <a data-fancybox="gallery" href="images/ga4.jpg"> <img height="200"  width="200"  src="images/ga4.jpg"></a></div>
+    </div>
+        </div>
+         <div class="col-md-1 pl-5 ">
+          <a data-fancybox="gallery" href="images/p1.jpg"> <img height="400"  width="200"  src="images/p1.jpg"></a>
+        </div>
+      </div>
+  
+
+</div>
     <!-- /.row -->
 
   </section>
