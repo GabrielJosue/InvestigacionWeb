@@ -6,3 +6,19 @@
 body {
   padding-top: 56px;
 }
+
+
+   nav section ul li.nav-item.dropdown div.dropdown-menu{
+   	background-color: #43b0dd;
+   	opacity: 0.90;
+   }
+
+
+ nav section ul li.nav-item.dropdown div.dropdown-menu a.dropdown-item:hover {
+   	/*background-color: #168396 ;*/
+   	background: linear-gradient(#43b0dd,#168396);
+   	opacity: 0.90;
+   }#168396
+
+
+
