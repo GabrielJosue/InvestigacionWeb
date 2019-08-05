@@ -15,7 +15,7 @@ body {
    	opacity: 0.90;
    }
    .dropdown:hover > .dropdown-menu{
-	display: block;
+	display:inline-block;
    
    }
 
