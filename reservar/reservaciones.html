@@ -1,0 +1,237 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservaciones</title>
+    <!-- Bootstrap core CSS -->
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/small-business.css" rel="stylesheet">
+  <link rel="stylesheet" href="../datedropper/datedropper.css">
+
+  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+</head>
+<body>
+     <!-- Navigation -->
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar  fixed-top navbar-light " style="background-color: #168396; " >
+    <section class="container">
+      <a class="navbar-brand" href="#"><img  width="60" height="50" src="../images/comf.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="../index.html">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+           <li class="nav-item">
+            <a class="nav-link text-white" href="../Galeria.html">Galeria</a>
+          </li>
+          
+          <li class="nav-item">
+
+            <a class="nav-link text-white" href="#">Habitaciones</a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="#">Reservar</a>
+  </li>
+
+  <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="../Nosotros.html">Nosotros</a>
+  </li>
+       
+              <li class="nav-item dropdown">
+    <a class="nav-link active dropdown-toggle text-white" data-toggle="dropdown" href="../contacto/contacto.html" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Consultas</a>
+    
+    </div>
+  </li>
+        </ul>
+      
+      </section>
+    </section>
+  </nav>
+      <section class="container-fluid">
+         
+
+          <article class="row">
+
+              <article class="col-xl-8 offset-xl-2 py-5">
+
+                 
+                  <!-- We're going to place the form here in the next step -->
+                  <form action="
+        " method="get" class="needs-validation" novalidate>
+        <article class="form-header">
+          <h1 class="text-center">Reservar</h1>
+        </article>
+        
+        <article class="form-row">
+            <article class="col-md-6">
+               
+                    <label for="validacion1">Nombre</label>
+                    <input id="form_name" type="text" name="name" class="form-control" id="validacion1" placeholder="Por favor ingresa tu nombre *" required="required">
+                    <article class="valid-feedback">
+                      Perfecto!
+                    </article>
+                
+            </article>
+            <article class="col-md-6">
+                <article class="form-group">
+                    <label for="validacion2">Apellidos *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" id="validacion2" placeholder="Por favor ingresa tus apellidos*" required="required">
+                    <article class="valid-feedback">Perfecto!</article>
+                </article>
+            </article>
+        </article>
+            
+            <!---->
+            <article class="form-row">
+                <article class="col-md-6">
+                    
+                        <label for="validacionEmail">Correo *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" id="validacionEmail" placeholder="Por favor ingresa tu email *" required="required" data-error="Valid email is required.">
+                        <small class="form-text text-muted">exmple@gmail.com</small>
+                        <article class="valid-feedback">Perfecto</article>
+                    
+                </article>
+                <article class="col-md-6">
+                   
+                        <label for="validarOpciones" >Telefono *</label>
+                        <input type="tel" name="telefono"  class="form-control" id="" required>
+                        <!--
+                        <select id="validarOpciones" name="need" class="form-control custom-select" required="required" data-error="Selecciona una opcion.">
+                            <option value=""></option>
+                            <option value="Request quotation">Habitaciones</option>
+                            <option value="Request order status">Precios</option>
+                            <option value="Request copy of an invoice">Reservaciones</option>
+                            <option value="Other">Otros</option>
+                        </select> -->
+                        <article class="valid-feedback">Perfecto!</article>
+                    
+                </article>
+                <!---->
+                
+            </article>
+            <!---->
+            <article class="form-row">
+              <article class="col-md-6">
+                  
+                      
+                      <label for="validarOpciones" ># Personas*</label>
+                      <select id="validarOpciones" name="need" class="form-control custom-select" required="required" data-error="Selecciona una opcion.">
+                          <option value=""></option>
+                          <option value="Request quotation">1</option>
+                          <option value="Request order status">2</option>
+                          <option value="Request copy of an invoice">4</option>
+                          <option value="Other"> otros</option>
+                      </select> 
+                      <article class="valid-feedback">Perfecto</article>
+                  
+              </article>
+              <article class="col-md-6">
+                 
+                      <label for="validarOpciones" >Habitacion*</label>
+                      <select id="validarOpciones" name="need" class="form-control custom-select" required="required" data-error="Selecciona una opcion.">
+                          <option value=""></option>
+                          <option value="Request quotation">Sencilla</option>
+                          <option value="Request order status">Doble</option>
+                          <option value="Request copy of an invoice">suite</option>
+                          <option value="Other">Premuim</option>
+                      </select> 
+                      <article class="valid-feedback">Perfecto!</article>
+                  
+              </article>
+          </article>
+            <article class="form-row">
+                    <article class="col-md-6">
+                       
+                            <label for="validacion1">Fecha Entrada *</label>
+                            <input id="form_name" type="text" name="entrada" class="form-control fechas" id="validacion1"   data-large-mode="true" data-large-default="true" data-lock="from" data-translate-mode="true" required="required" >
+                            <article class="valid-feedback">
+                              Perfecto!
+                            </article>
+                        
+                    </article>
+                    <article class="col-md-6">
+                        <article class="form-group">
+                            <label for="validacion2">Fecha Salida *</label>
+                            <input id="" type="text" name="salida" class="form-control fechas" id="validacion2"  required="" data-large-mode="true" data-large-default="true" data-lock="from" data-translate-mode="true" data-dd-theme="leaf">
+                            <article class="valid-feedback">Perfecto!</article>
+                        </article>
+                    </article>
+                </article>
+            <!---->
+            <article class="form-row">
+                <article class="col-md-12">
+                   
+                        <label for="validarMensaje">Mensaje *</label>
+                        <textarea  name="message" class="form-control" id="validarMensaje" placeholder="Observaciones *" rows="4" required="required" minlength="4" maxlength="255"></textarea>
+                        <article class="valid-feedback">Perfecto!</article>
+                   
+                </article>
+                <article class="col-md-12">
+                    <br>
+                    <button class="btn btn-success btn-send" type="submit">Enviar</button>
+                </article>
+            </article>
+        </article>
+      </form>
+
+              </article>
+
+          </article>
+
+      
+       
+      </section>
+
+     <!-- Footer -->
+  <footer class="py-3 " style="background-color: #168396">
+    <section class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </section>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../jquery/jquery.slim.min.js"></script>
+  <script src="../jquery/jquery-1.10.2.min.js"></script>
+  <script src="../datedropper/datedropper.js"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!--script para validar-->
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+    <!--script datedropper-->
+    <script>
+        $('.fechas').dateDropper();
+    </script>
+</body>
+</html>
