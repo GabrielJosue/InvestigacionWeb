@@ -18,7 +18,11 @@ body {
    	/*background-color: #168396 ;*/
    	background: linear-gradient(#43b0dd,#168396);
    	opacity: 0.90;
-   }#168396
+   }
+   .dropdown:hover > .dropdown-menu{
+	display: block;
+   
+   }
 
 
 
