@@ -20,23 +20,48 @@ body {
    }
    form{
     box-shadow: 0 10px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    background-color:gray;
-    border-radius: 25px;
+    background-color:lightblue;
+    
    }
    .form-header{
      padding:20px;
      margin: 20px auto;
      color: white;
    }
+   /*
    label{
-     color:lightskyblue;
+     color:;
    }
+   */
 
    .back-to-top {
     position: fixed;
     bottom: 25px;
     right: 25px;
-}
+  } 
+  #facebook{
+    font-size: 30px;
+    color:#3b5998;
+  }
+  #twitter{
+    font-size: 30px;
+    color:#1da1f2;
+  }
+  #instagram{
+    font-size: 30px;
+    
+  }
+  #youtube{
+    font-size:30px;
+    color:#ff0000;
+  }
+  footer > ul > li {
+    display: inline;
+    text-decoration: none;
+  }
+    li > a.social {
+    text-decoration:none;
+  }
 
 
 
