@@ -28,11 +28,7 @@ body {
      margin: 20px auto;
      color: white;
    }
-   /*
-   label{
-     color:;
-   }
-   */
+
 
    .back-to-top {
     position: fixed;
@@ -63,5 +59,6 @@ body {
     text-decoration:none;
   }
 
+  
 
 
