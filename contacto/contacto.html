@@ -32,11 +32,15 @@
            <li class="nav-item">
             <a class="nav-link text-white" href="../Galeria.html">Galeria</a>
           </li>
-          
-          <li class="nav-item">
-
-            <a class="nav-link text-white" href="#">Habitaciones</a>
-
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Habitaciones
+            </a>
+            <article class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Sencillas</a>
+              <articleclass="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Dobles</a>
+              </article >
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link text-white" href="#">Reservar</a>
@@ -64,16 +68,15 @@
           <article class="row">
 
               <article class="col-xl-8 offset-xl-2 py-5">
-
-                  <h1 class="text-center">Contactanos </h1>
                   <!-- We're going to place the form here in the next step -->
                   <form action="
         " method="get" class="needs-validation" novalidate>
+        <h1 class="text-center form-header">Contactanos </h1>
         <article class="form-row">
             <article class="col-md-6">
                
                     <label for="validacion1">Nombre</label>
-                    <input id="form_name" type="text" name="name" class="form-control" id="validacion1" placeholder="Por favor ingresa tu nombre *" required="required" data-error="Firstname is required.">
+                    <input id="form_name" type="text" name="nombre" class="form-control" id="validacion1" placeholder="Por favor ingresa tu nombre *" required="required" >
                     <article class="valid-feedback">
                       Perfecto!
                     </article>
@@ -82,7 +85,7 @@
             <article class="col-md-6">
                 <article class="form-group">
                     <label for="validacion2">Apellidos *</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" id="validacion2" placeholder="Por favor ingresa tus appellidos*" required="required" data-error="Lastname is required.">
+                    <input id="form_lastname" type="text" name="apellidos" class="form-control" id="validacion2" placeholder="Por favor ingresa tus apellidos*" required="required" >
                     <article class="valid-feedback">Perfecto!</article>
                 </article>
             </article>
@@ -93,15 +96,15 @@
                 <article class="col-md-6">
                     
                         <label for="validacionEmail">Correo *</label>
-                        <input id="form_email" type="email" name="email" class="form-control" id="validacionEmail" placeholder="Por favor ingresa tu email *" required="required" data-error="Valid email is required.">
+                        <input id="form_email" type="email" name="email" class="form-control" id="validacionEmail" placeholder="Por favor ingresa tu email *" required="required" >
                         <small class="form-text text-muted">exmple@gmail.com</small>
                         <article class="valid-feedback">Perfecto</article>
                     
                 </article>
                 <article class="col-md-6">
                    
-                        <label for="validarOpciones">Por Favor selecciona una categoria*</label>
-                        <select id="validarOpciones" name="need" class="form-control custom-select" required="required" data-error="Selecciona una opcion.">
+                        <label for="validarOpciones">Selecciona una categoria*</label>
+                        <select id="validarOpciones" name="cat" class="form-control custom-select" required="required" data-error="Selecciona una opcion.">
                             <option value=""></option>
                             <option value="Request quotation">Habitaciones</option>
                             <option value="Request order status">Precios</option>
@@ -117,7 +120,7 @@
                 <article class="col-md-12">
                    
                         <label for="validarMensaje">Mensaje *</label>
-                        <textarea  name="message" class="form-control" id="validarMensaje" placeholder="Observaciones *" rows="4" required="required" minlength="4" maxlength="255"></textarea>
+                        <textarea  name="mensaje" class="form-control" id="validarMensaje" placeholder="Observaciones *" rows="4" required="required" minlength="4" maxlength="255"></textarea>
                         <article class="valid-feedback">Perfecto!</article>
                    
                 </article>
@@ -134,11 +137,19 @@
           </article>
 
       
-       
+          <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
       </section>
-
+      
      <!-- Footer -->
-  <footer class="py-3 fixed-bottom" style="background-color: #168396">
+  <footer class="py-3" style="background-color: #168396; ">
+   
+    <ul>
+      <li><a id="facebook" class="fab fa-facebook social" href=""></a></li>
+      <li><a id="twitter" class="fab fa-twitter social" href=""></a></li>
+      <li><a id="instagram" class="fab fa-instagram social" href=""></a></li>
+      <li><a id="youtube" class="fab fa-youtube social" href=""></a></li>
+    </ul>
+  
     <section class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
     </section>
