@@ -1,0 +1,34 @@
+
+
+.isotope-pager {
+  margin: 50px 0;
+}
+
+.isotope-pager .previous_btn, .isotope-pager .next_btn {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #242424;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #242424;
+  background: #fff;
+  border-radius: 5px;
+  vertical-align: baseline;
+}
+
+.isotope-pager .pager {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #242424;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #242424;
+  background: #fff;
+}
+
+.isotope-pager .pager.active {
+  background: #0c1223;
+  color: #fff;
+}
