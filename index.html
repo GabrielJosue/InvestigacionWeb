@@ -16,7 +16,7 @@
   <!-- Custom styles for this template -->
   <link href="css/small-business.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="AOS/aos.css">
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 
 
@@ -108,10 +108,10 @@
         </article>
       </article>
       <!-- /.col-lg-8 -->
-      <article class="col-lg-5">
+      <article class="col-lg-5" data-aos="fade-left">
         <h1 class="font-weight-light">Business Name or Tagline</h1>
         <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-        <a class="btn btn-primary" href="#">Call to Action!</a>
+        <a class="btn btn-primary" href="Galeria.html">Ver mas!</a>
       </article>
       <!-- /.col-md-4 -->
     </article>
@@ -121,9 +121,9 @@
     
 
     <!-- Content Row -->
-    <section class="row">
+    <section class="row" data-aos="zoom-in-up">
       <section class="col-md-4 mb-5">
-        <article class="card h-100">
+        <article class="card h-100" >
           <article class="card-body">
             <h2 class="card-title">Card One</h2>
             <img src="images/p1.jpg">
@@ -136,7 +136,7 @@
       </section>
       <!-- /.col-md-4 -->
       <section class="col-md-4 mb-5">
-        <section class="card h-100">
+        <section class="card h-100" >
           <article class="card-body">
             <h2 class="card-title">Card Two</h2>
             <img src="images/p2.jpg">
@@ -186,7 +186,10 @@
   <script src="jquery/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/68a231f8ce.js"></script>
-
+  <script src="AOS/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
